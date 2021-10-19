@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntraVisionTestTask_VendingMachine", "IntraVisionTestTask_VendingMachine\IntraVisionTestTask_VendingMachine.csproj", "{5A330632-3848-4071-8165-7E7FA54367E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework", "EntityFramework\EntityFramework.csproj", "{7FA63707-060C-413C-83A2-D5187B86EFA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A330632-3848-4071-8165-7E7FA54367E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A330632-3848-4071-8165-7E7FA54367E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A330632-3848-4071-8165-7E7FA54367E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A330632-3848-4071-8165-7E7FA54367E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FA63707-060C-413C-83A2-D5187B86EFA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FA63707-060C-413C-83A2-D5187B86EFA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FA63707-060C-413C-83A2-D5187B86EFA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FA63707-060C-413C-83A2-D5187B86EFA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0DE94B2-04DF-403E-8C7C-C53823451953}
+	EndGlobalSection
+EndGlobal

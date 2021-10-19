@@ -1,0 +1,13 @@
+D:\IntraVisionTestTask_VendingMachine\EntityFramework\bin\Debug\netcoreapp3.1\EntityFramework.deps.json
+D:\IntraVisionTestTask_VendingMachine\EntityFramework\bin\Debug\netcoreapp3.1\EntityFramework.runtimeconfig.json
+D:\IntraVisionTestTask_VendingMachine\EntityFramework\bin\Debug\netcoreapp3.1\EntityFramework.runtimeconfig.dev.json
+D:\IntraVisionTestTask_VendingMachine\EntityFramework\bin\Debug\netcoreapp3.1\EntityFramework.dll
+D:\IntraVisionTestTask_VendingMachine\EntityFramework\bin\Debug\netcoreapp3.1\EntityFramework.pdb
+D:\IntraVisionTestTask_VendingMachine\EntityFramework\obj\Debug\netcoreapp3.1\EntityFramework.csproj.AssemblyReference.cache
+D:\IntraVisionTestTask_VendingMachine\EntityFramework\obj\Debug\netcoreapp3.1\EntityFramework.GeneratedMSBuildEditorConfig.editorconfig
+D:\IntraVisionTestTask_VendingMachine\EntityFramework\obj\Debug\netcoreapp3.1\EntityFramework.AssemblyInfoInputs.cache
+D:\IntraVisionTestTask_VendingMachine\EntityFramework\obj\Debug\netcoreapp3.1\EntityFramework.AssemblyInfo.cs
+D:\IntraVisionTestTask_VendingMachine\EntityFramework\obj\Debug\netcoreapp3.1\EntityFramework.csproj.CoreCompileInputs.cache
+D:\IntraVisionTestTask_VendingMachine\EntityFramework\obj\Debug\netcoreapp3.1\EntityFramework.dll
+D:\IntraVisionTestTask_VendingMachine\EntityFramework\obj\Debug\netcoreapp3.1\EntityFramework.pdb
+D:\IntraVisionTestTask_VendingMachine\EntityFramework\obj\Debug\netcoreapp3.1\EntityFramework.genruntimeconfig.cache

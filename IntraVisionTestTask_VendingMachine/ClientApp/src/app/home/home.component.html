@@ -1,0 +1,58 @@
+<div class="content">
+  <div class="row">
+    <div class="col-2">
+      <h2>Current: {{depositedSum}}</h2>
+    </div>
+    <div class="col-10">
+      <div class="row">
+        <div *ngFor="let money of moneys" class="col-1">
+          <div *ngIf="money.isAvailable; then moneyAvaibleBlock else moneyUnavaibleBlock"></div>
+          <ng-template #moneyAvaibleBlock>
+            <button type="button" class="btn btn-primary btn-lg" (click)="addCurrent(money)">{{money.denomination}}</button>
+          </ng-template>
+          <ng-template #moneyUnavaibleBlock>
+            <button type="button" disabled class="btn btn-secondary btn-lg">{{money.denomination}}</button>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row my-5">
+    <div class="col-6">
+      <div class="row">
+        <div *ngFor="let drink of drinks" class="row mx-auto my-4">
+          <figure class="figure col-10">
+            <img src="./assets/{{drink.id}}.png" width="150" height="150">
+            <figcaption class="figure-caption">
+              price: {{drink.price}}
+            </figcaption>
+          </figure>
+          <div *ngIf="depositedSum - selectedSum >= drink.price && drink.count > 0; then buttonAvaibleBlock else buttonUnavaibleBlock"></div>
+          <ng-template #buttonAvaibleBlock>
+            <button type="button" class="btn btn-primary btn-lg" (click)="select(drink)"><i class="bi bi-plus-square"></i></button>
+          </ng-template>
+          <ng-template #buttonUnavaibleBlock>
+            <button type="button" disabled class="btn btn-secondary btn-lg"><i class="bi bi-plus-square"></i></button>
+          </ng-template>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <h3>Selected:</h3>
+      <div class="row">
+        <div *ngFor="let drink of selected" class="row mx-auto my-4">
+          <figure class="figure col-10">
+            <img src="./assets/{{drink.id}}.png" width="150" height="150">
+          </figure>
+        </div>
+      </div>
+      <button type="button" class="btn btn-primary btn-lg" (click)="buy()"><i class="bi bi-basket"></i></button>
+      <h4>Change: {{changeSum}}</h4>
+      <div class="row">
+        <div *ngFor="let coin of change" class="mx-4">
+          <button type="button" disabled class="btn btn-secondary btn-lg">{{coin.denomination}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

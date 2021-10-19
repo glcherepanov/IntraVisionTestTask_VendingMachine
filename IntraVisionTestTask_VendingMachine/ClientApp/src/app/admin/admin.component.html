@@ -1,0 +1,68 @@
+<h2>Money</h2> 
+<h4>Total moneys in machine: {{totalCoins}}</h4>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">denomination</th>
+      <th scope="col">count</th>
+      <th scope="col">isAvailable</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let coin of coins">
+      <div *ngIf="coin.id == changingMoney.id; then changeMoneyBlock else showMoneyBlock"></div>
+      <ng-template #changeMoneyBlock>
+        <td><input [(ngModel)]="coin.denomination" name="count" type="number" placeholder="coin.denomination"></td>
+        <td><input [(ngModel)]="coin.count" name="count" type="number" placeholder="coin.count"></td>
+        <td><input [(ngModel)]="coin.isAvailable" name="count" type="checkbox" placeholder="coin.isAvailable"></td>
+        <td><button type="button" class="btn btn-primary btn-lg" (click)="saveMoney(coin)"><i class="bi bi-save"></i></button></td>
+        <td><button type="button" class="btn btn-danger btn-lg" (click)="undoMoney(money)"><i class="bi bi-backspace"></i></button></td>
+      </ng-template>
+      <ng-template #showMoneyBlock>
+        <td>{{coin.denomination}}</td>
+        <td>{{coin.count}}</td>
+        <td>{{coin.isAvailable}}</td>
+        <td><button type="button" class="btn btn-primary btn-lg" (click)="selectChanchingMoney(coin)"><i class="bi bi-pencil-square"></i></button></td>
+        <td><button type="button" class="btn btn-danger btn-lg" (click)="removeMoney(coin.id)"><i class="bi bi-x-square"></i></button></td>
+      </ng-template>
+    </tr>
+  </tbody>
+</table>
+<button type="button" class="btn btn-primary btn-lg" (click)="addMoney()"><i class="bi bi-plus-square"></i></button>
+
+<h2>Drinks</h2> 
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">count</th>
+      <th scope="col">price</th>
+      <th scope="col">image</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let drink of drinks">
+      <th>{{drink.id}}</th>
+      <div *ngIf="drink.id == changingDrink.id; then changeDrinkBlock else showDrinkBlock"></div>
+      <ng-template #changeDrinkBlock>
+        <td><input [(ngModel)]="drink.count" name="count" type="number" placeholder="drink.count"></td>
+        <td><input [(ngModel)]="drink.price" name="count" type="number" placeholder="drink.price"></td>
+        <td><input [(ngModel)]="drink.imageSrc" name="count" type="text" placeholder="drink.imageSrc"></td>
+        <td><button type="button" class="btn btn-primary btn-lg" (click)="saveDrink(drink)"><i class="bi bi-save"></i></button></td>
+        <td><button type="button" class="btn btn-danger btn-lg" (click)="undoDrink(drink)"><i class="bi bi-backspace"></i></button></td>
+      </ng-template>
+      <ng-template #showDrinkBlock>
+        <td>{{drink.count}}</td>
+        <td>{{drink.price}}</td>
+        <td>{{drink.imageSrc}}</td>
+        <td><button type="button" class="btn btn-primary btn-lg" (click)="selectChanchingDrink(drink)"><i class="bi bi-pencil-square"></i></button></td>
+        <td><button type="button" class="btn btn-danger btn-lg" (click)="removeDrink(drink.id)"><i class="bi bi-x-square"></i></button></td>
+      </ng-template>
+    </tr>
+  </tbody>
+</table>
+<button type="button" class="btn btn-primary btn-lg" (click)="addDrink()"><i class="bi bi-plus-square"></i></button>
